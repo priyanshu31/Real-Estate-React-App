@@ -3,6 +3,9 @@ import SearchBox from './SearchBox'
 import PropertyCard from './propertyCard'
 import { useSelector } from 'react-redux'
 import building from '../../images/BuildingConstruction.jpg'
+import rent from '../../images/Rent.jpg'
+import plot from '../../images/Plot.jpg'
+import commercial from '../../images/Commercial.jpg'
 
 const Home = () => {
 
@@ -15,17 +18,17 @@ const Home = () => {
             description: "Buy Something"
         },
         {
-            image: building,
+            image: rent,
             title: "Rent",
             description: "Rent Something"
         },
         {
-            image: building,
+            image: plot,
             title: "Plot",
             description: "We have a lot of plots for you"
         },
         {
-            image: building,
+            image: commercial,
             title: "Commercial",
             description: "Have a look for properties for your business"
         },
