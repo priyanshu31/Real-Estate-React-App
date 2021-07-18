@@ -1,7 +1,12 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { tagLine } from '../../actions/index'
 
-const dropdownMenu = (props) => {
+const DropdownMenu = (props) => {
+
+    const dispatch = useDispatch()
+
     return (
         <Fragment>
             <div className="dropdown userdropdown">
@@ -11,7 +16,7 @@ const dropdownMenu = (props) => {
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     {
                         props.menu.map((item, index) => 
-                            <Link key={index} to="/" className="dropdown-item">{ item }</Link>
+                            <Link key={index} to="/" className="dropdown-item" onClick={ () => dispatch(tagLine(item)) }>{ item }</Link>
                         )
                     }
                     
@@ -22,4 +27,4 @@ const dropdownMenu = (props) => {
     )
 }
 
-export default dropdownMenu
+export default DropdownMenu

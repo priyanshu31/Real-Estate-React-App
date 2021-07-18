@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react'
 import SearchBox from './SearchBox'
 import PropertyCard from './propertyCard'
+import { useSelector } from 'react-redux'
 import building from '../../images/BuildingConstruction.jpg'
 
 const Home = () => {
+
+    const taglineState = useSelector((state) => state.changeTagline)
 
     let propertyCardDetials = [
         {
@@ -33,7 +36,7 @@ const Home = () => {
 
            <div className="container-fluid bg-image">
                <div style={{textAlign: "center"}}>
-                    <h2 style={{margin: "2rem 0rem"}}>Buy your Dream Property</h2>
+                    <h2 style={{margin: "2rem 0rem"}}>{taglineState}</h2>
                     <SearchBox />
                </div>
            </div>
