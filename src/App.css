@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 43.5rem;
+    height: 47.2rem;
     background-image: url('images/BuildingConstruction.jpg');
     backdrop-filter: blur(8px);
     opacity: 0.9;
@@ -39,7 +39,7 @@ body{
 }
 .dropdown-menu{
     margin-top: 1rem;
-    background-color: transparent !important;
+    background-color: #2c2424fa !important;
     border-color: black !important;
 }
 
