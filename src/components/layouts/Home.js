@@ -40,7 +40,7 @@ const Home = () => {
 
            <div className="container-fluid bg-image" style={{backgroundImage: `url(${BackgroundImage})`}}>
                <div style={{textAlign: "center"}}>
-                    <h2 style={{margin: "2rem 0rem"}}>{taglineState}</h2>
+                    <h2 style={{margin: "2rem 0rem", color: "black", fontWeight: "bolder"}}>{taglineState}</h2>
                     <SearchBox />
                </div>
            </div>

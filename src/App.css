@@ -12,8 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 47.2rem;
-    backdrop-filter: blur(8px);
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .userdropdown{
