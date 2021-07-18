@@ -10,6 +10,7 @@ import commercial from '../../images/Commercial.jpg'
 const Home = () => {
 
     const taglineState = useSelector((state) => state.changeTagline)
+    const BackgroundImage = useSelector((state) => state.changeBackground)
 
     let propertyCardDetials = [
         {
@@ -37,7 +38,7 @@ const Home = () => {
     return (
         <Fragment>
 
-           <div className="container-fluid bg-image">
+           <div className="container-fluid bg-image" style={{backgroundImage: `url(${BackgroundImage})`}}>
                <div style={{textAlign: "center"}}>
                     <h2 style={{margin: "2rem 0rem"}}>{taglineState}</h2>
                     <SearchBox />

@@ -12,7 +12,6 @@ body{
     align-items: center;
     justify-content: center;
     height: 47.2rem;
-    background-image: url('images/BuildingConstruction.jpg');
     backdrop-filter: blur(8px);
     opacity: 0.9;
 }
