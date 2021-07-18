@@ -1,3 +1,22 @@
+*{
+    box-sizing: border-box !important; 
+}
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bg-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43.5rem;
+    background-image: url('images/BuildingConstruction.jpg');
+    backdrop-filter: blur(8px);
+    opacity: 0.9;
+}
+
 .userdropdown{
     padding: 0.25rem 0rem;
     background-color: transparent;

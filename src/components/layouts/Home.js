@@ -1,19 +1,22 @@
 import React, { Fragment } from 'react'
 import SearchBox from './SearchBox'
 import PropertyCard from './propertyCard'
+import building from '../../images/BuildingConstruction.jpg'
 
 const Home = () => {
     return (
         <Fragment>
 
-           <div className="container" style={{textAlign: "center", margin: "7rem"}}>
-               <h2>Tagline</h2>
-               <SearchBox />
+           <div className="container-fluid bg-image">
+               <div style={{textAlign: "center"}}>
+                    <h2 style={{margin: "2rem 0rem"}}>Tagline</h2>
+                    <SearchBox />
+               </div>
            </div>
 
-            <h2 class="my-3 mx-3">Top Picks for You</h2>
+            <h2 style={{margin: "3rem"}}>Top Picks for You</h2>
 
-            <div class="container-fluid row">
+            <div className="container row" style={{margin: "2rem"}}>
                 <PropertyCard />
             </div>
 
