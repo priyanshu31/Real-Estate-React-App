@@ -6,7 +6,7 @@ const changeTagline = (state = intialTagline, action) => {
         case "BUY": return intialTagline;
         case "RENT": return "Rent a Property";
         case "PLOT": return "Search upon the variaty of Plot we are having"
-        case "COMMERCIAL": return "We have a lot of option for your property"
+        case "COMMERCIAL": return "We have a lot of option for your Business"
         default: return state;
     }
 

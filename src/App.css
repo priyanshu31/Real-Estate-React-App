@@ -93,10 +93,20 @@ body{
     border-color: #415c79;
 }
 
-
 .copyright{
     text-align: center;
     padding: 1rem 0.5rem;
+}
+
+.list-item-footer{
+    color: #bffce0 !important;
+    background-color: transparent !important;
+    padding-left: 0.25rem;
+}
+
+.list-item-footer:active{
+    background-color: transparent !important;
+    color: #58dfa1 !important;
 }
 
 /* Taken from CodePen */

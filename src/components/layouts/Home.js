@@ -30,7 +30,7 @@ const Home = () => {
         {
             image: commercial,
             title: "Commercial",
-            description: "Have a look for properties for your business"
+            description: "Properties for your business"
         },
     ]
 

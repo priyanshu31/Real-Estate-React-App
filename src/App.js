@@ -6,17 +6,35 @@ import Footer from './components/layouts/Footer'
 import './App.css'
 
 const App = () => {
+
+  let locations = [
+    "Delhi NCR",
+    "Mumbai",
+    "Bangalore",
+    "Pune",
+    "Chennai",
+    "Bhopal"
+  ];
+
+  let services = [
+    "Buy",
+    "Rent",
+    "Plot",
+    "Commercial"
+  ];
+
+
   return (
     <Fragment>
       <Router>
         
-        <Navbar />
+        <Navbar locations = { locations } services = { services }/>
 
         <Switch>
           <Route exact path='/' component={ Home } />
         </Switch>
 
-        <Footer />
+        <Footer locations = { locations } services = { services } />
 
       </Router>
     </Fragment>

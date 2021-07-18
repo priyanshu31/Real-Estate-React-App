@@ -2,21 +2,7 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 import DropdownMenu from './dropdownMenu.js'
 
-const Navbar = () => {
-
-    let locations = [
-        "Delhi NCR",
-        "Mumbai",
-        "Bangalore",
-        "Pune"
-    ];
-
-    let services = [
-        "Buy",
-        "Rent",
-        "Plot",
-        "Commercial"
-    ];
+const Navbar = (props) => {
 
     return (
         <Fragment>
@@ -30,8 +16,8 @@ const Navbar = () => {
                     </div>
 
                     <div style={{display: "flex", paddingRight: "2rem"}}>
-                        <DropdownMenu name="Services" menu={ services }/>
-                        <DropdownMenu name="Location" menu={ locations }/>
+                        <DropdownMenu name="Services" menu={ props.services }/>
+                        <DropdownMenu name="Location" menu={ props.locations }/>
                     </div>
 
                 </div>

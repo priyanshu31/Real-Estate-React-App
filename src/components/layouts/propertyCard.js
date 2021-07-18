@@ -8,7 +8,7 @@ const propertyCard = (props) => {
             <div className="card-body" style={{margin: "0.5rem 0rem"}}>
                 <h5 className="card-title">{props.detials.title}</h5>
                 <p className="card-text">{props.detials.description}</p>
-                <Link to="/" className="btn btn-primary">Read More...</Link>
+                <Link to="/" className="btn btn-primary">Explore...</Link>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <div className="container-fluid footer">
             
@@ -22,8 +22,26 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className="col-4">
 
+                <div className="col-2" style={{margin: "1rem 5rem"}}>
+
+                    <ul style={{color: "whitesmoke", fontSize: "1.25rem", padding: "0"}}>Real Estate in India</ul>
+                    {
+                        props.locations.map((item, index) => 
+                            <Link key={index} to="/" className="dropdown-item list-item-footer" style={{textDecoration: "none"}}>Properties in { item }</Link>
+                        )
+                    }
+
+                </div>
+
+                <div className="col-2" style={{margin: "1rem 5rem"}}>
+
+                    <ul style={{color: "whitesmoke", fontSize: "1.25rem", padding: "0"}}>Our Services</ul>
+                    {
+                        props.services.map((item, index) => 
+                            <Link key={index} to="/" className="dropdown-item list-item-footer" style={{textDecoration: "none"}}>{ item }</Link>
+                        )
+                    }
 
                 </div>
 
@@ -32,12 +50,6 @@ const Footer = () => {
 
             <div className="row align-items-start" style={{margin: "1rem"}}>
                 
-                <div className="col">
-                    FINNEWS/ LOGO
-                    <br />
-                    <br />
-                    TAGLINE
-                </div>
 
                 <div className="col links">
                     <a href="/about">About</a>
@@ -52,6 +64,7 @@ const Footer = () => {
                         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
                         <div className="container">
                             <div className="text-center center-block">
+                                <h4 style={{ color: "#b6ffbf" }}>Follow us on: </h4>
                                 <Link to="/"><i id="social-fb" className="fa fa-facebook-square fa-3x social"></i></Link>
                                 <Link to="/"><i id="social-tw" className="fa fa-twitter-square fa-3x social"></i></Link>
                             </div>
