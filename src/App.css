@@ -46,12 +46,9 @@ body{
 .footer{
     background-color: black;
     color: white;
+    padding: 1rem 1rem;
 }
 
-.footer{
-    background-color: black;
-    color: white;
-}
 
 .card-body{
     padding: 0rem 1.25rem;
@@ -87,11 +84,6 @@ body{
     border: 1px solid #263543;
 }
 
-#submitbtn{
-    background-color: transparent;
-    margin: 0.2rem 0.75rem;
-    border-color: #415c79;
-}
 
 .copyright{
     text-align: center;
@@ -107,6 +99,21 @@ body{
 .list-item-footer:active{
     background-color: transparent !important;
     color: #58dfa1 !important;
+}
+
+.input-footer:hover{
+    color: black !important;
+    background-color: white !important;
+}
+
+.submit-btn-footer{
+    background-color: transparent;
+    margin: 0.2rem 0.75rem;
+    border-color: #415c79;
+}
+
+.submit-btn-footer:active{
+    color: blue !important;
 }
 
 /* Taken from CodePen */

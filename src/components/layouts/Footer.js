@@ -12,12 +12,12 @@ const Footer = (props) => {
                         <div className="card-body">
                             <h5 className="card-title contact-title">Contact Us</h5>
                             <div className="mb-3">
-                                <input type="text" className="form-control" id="Email" placeholder="Email" name="Email"/>
+                                <input type="text" className="form-control input-footer" id="Email" placeholder="Email" name="Email"/>
                             </div>
                             <div className="mb-3">
-                                <textarea className="form-control" id="Message" rows="3" placeholder="Message" type="text" name="Message"></textarea>
+                                <textarea className="form-control input-footer" id="Message" rows="3" placeholder="Message" type="text" name="Message"></textarea>
                             </div>
-                            <button className="btn btn-primary" id="submitbtn">Submit</button>
+                            <button className="btn btn-primary submit-btn-footer">Submit</button>
                         </div>
                     </div>
 
