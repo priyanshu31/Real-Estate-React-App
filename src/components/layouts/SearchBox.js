@@ -4,10 +4,17 @@ const SearchBox = () => {
 
     let [location, setLocation] = useState('');
     let [propertyType, setPropertyType] = useState('');
-    let [budget, setBudget] = useState(5)
+    let [budget, setBudget] = useState(5);
 
     let updateLocation = element => setLocation(element.target.value);
     let updatePropertyType = element => setPropertyType(element.target.value);
+    let updateBudget = element => {
+        
+        if(element.target.value < 1)
+            setBudget(1);
+        else
+            setBudget(element.target.value);
+    } 
 
     return (
         <div className="search-group">
@@ -26,10 +33,10 @@ const SearchBox = () => {
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="basic-addon3">Budget</span>
                 </div>
-                <input type="number" className="form-control" id="basic-url" aria-describedby="basic-addon3" />
+                <input type="number" className="form-control" id="basic-url" aria-describedby="basic-addon3" value={budget} onChange={updateBudget} />
 
                 <div className="input-group-prepend">
-                    <span className="input-group-text" id="basic-addon3" value={budget}>in Lacs</span>
+                    <span className="input-group-text" id="basic-addon3">in Lacs</span>
                 </div>
 
                 <button type="button" className="btn btn-success" style={{textDecoration: "none", color: "whitesmoke", padding: "0.25rem 1rem"}}>Search</button>
